@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Paws - Dog Care Center</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 1000px;
+      margin: 30px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    li::before {
+      content: "🐾";
+      position: absolute;
+      left: 0;
+    }
+
+    .breed-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .breed-card {
+      background-color: white;
+      border-radius: 15px;
+      width: 280px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .breed-card:hover {
+      transform: scale(1.05);
+    }
+
+    .breed-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .breed-card h3 {
+      text-align: center;
+      padding: 10px;
+      background: #2c3e50;
+      color: #fff;
+      margin: 0;
+    }
+
+    .breed-card p {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .fun-facts {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .fact {
+      display: none;
+      animation: fade 1s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #1a242f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #2c3e50;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 15px;
+      }
+      .breed-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🐶 Welcome to Happy Paws - Dog Care Center</h1>
+  </header>
+
+  <section>
+    <h2>Daily Dog Care Tips</h2>
+    <ul>
+      <li>Feed your dog twice a day with nutritious food</li>
+      <li>Always provide access to fresh water</li>
+      <li>Take your dog for daily walks and playtime</li>
+      <li>Brush your dog’s coat regularly</li>
+      <li>Clean ears and trim nails every 2 weeks</li>
+      <li>Bathe your dog every 2–4 weeks with dog-friendly shampoo</li>
+      <li>Visit the vet for check-ups and vaccinations</li>
+      <li>Provide mental stimulation with toys and puzzles</li>
+    </ul>
+  </section><section>
+  <h2>🐕 Dog Diseases and Prevention</h2>
+  <ul>
+    <li><strong>Rabies:</strong> A deadly viral disease. <em>Prevention:</em> Regular vaccination.</li>
+    <li><strong>Parvovirus:</strong> Affects puppies and causes vomiting and diarrhea. <em>Prevention:</em> Early vaccination and hygiene.</li>
+    <li><strong>Distemper:</strong> Affects respiratory and nervous systems. <em>Prevention:</em> Annual vaccination.</li>
+    <li><strong>Lyme Disease:</strong> Caused by tick bites. <em>Prevention:</em> Tick control and regular vet checks.</li>
+    <li><strong>Heartworm:</strong> Spread by mosquitoes. <em>Prevention:</em> Monthly preventive medication.</li>
+    <li><strong>Leptospirosis:</strong> Bacterial infection from contaminated water. <em>Prevention:</em> Vaccination and avoiding stagnant water.</li>
+  </ul>
+</section>
+
+
+
+  <section>
+    <h2>🐾 Popular Dog Breeds</h2>
+    <div class="breed-gallery">
+      <div class="breed-card">
+        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Golden Retriever">
+        <h3>Golden Retriever</h3>
+        <p>Friendly, intelligent, and devoted. Great with families.</p>
+      </div>
+      <div class="breed-card">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Beagle">
+        <h3>Beagle</h3>
+        <p>Curious and merry. A wonderful companion for kids.</p>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <section>
+    <h2>🧠 Fun Dog Facts</h2>
+    <div class="fun-facts">
+      <p class="fact">Dogs’ sense of smell is at least 40x better than humans!</p>
+      <p class="fact">A Greyhound can run up to 45 miles per hour!</p>
+      <p class="fact">Dogs dream, just like humans — you can see it when they twitch in their sleep.</p>
+      <p class="fact">A dog’s nose print is unique, much like a human fingerprint.</p>
+    </div>
+    <button id="nextFact">Next Fun Fact</button>
+  </section>
+
+  <section>
+    <h2>🎓 Dog Care Quiz</h2>
+    <p>How much do you know about dogs? Test yourself!</p>
+    <p><strong>Question:</strong> How often should you bathe your dog?</p>
+    <button class="quiz-btn" data-answer="wrong">Every day</button>
+    <button class="quiz-btn" data-answer="correct">Every 2–4 weeks</button>
+    <button class="quiz-btn" data-answer="wrong">Once a year</button>
+    <p id="quizResult" style="font-weight:bold; margin-top:10px;"></p>
+  </section>
+
+  <section>
+    <h2>📞 Contact Us</h2>
+    <form id="messageForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse" style="color: green; font-weight: bold; display: none;"></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Happy Paws Dog Care Center. All rights reserved.
+  </footer>
+
+  <script>
+    // Fun facts rotation
+    const facts = document.querySelectorAll('.fact');
+    let factIndex = 0;
+    facts[factIndex].style.display = 'block';
+
+    document.getElementById('nextFact').addEventListener('click', () => {
+      facts[factIndex].style.display = 'none';
+      factIndex = (factIndex + 1) % facts.length;
+      facts[factIndex].style.display = 'block';
+    });
+
+    // Quiz interactivity
+    const quizButtons = document.querySelectorAll('.quiz-btn');
+    const quizResult = document.getElementById('quizResult');
+
+    quizButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (button.dataset.answer === 'correct') {
+          quizResult.textContent = "✅ Correct! Bathing every 2–4 weeks is ideal.";
+          quizResult.style.color = "green";
+        } else {
+          quizResult.textContent = "❌ Oops! That’s not right. Try again!";
+          quizResult.style.color = "red";
+        }
+      });
+    });
+
+    // Contact form response
+    document.getElementById('messageForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const response = document.getElementById('formResponse');
+
+      if (!name || !email || !message) {
+        response.style.display = 'block';
+        response.style.color = 'red';
+        response.textContent = 'Please fill in all fields.';
+        return;
+      }
+
+      response.style.display = 'block';
+      response.style.color = 'green';
+      response.textContent = 'Thank you, ' + name + '! We’ll get back to you soon.';
+      document.getElementById('messageForm').reset();
+    });
+  </script>
+</body>
+</html>
